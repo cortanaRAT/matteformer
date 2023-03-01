@@ -110,7 +110,7 @@ if __name__ == '__main__':
     # local
     parser.add_argument('--image-dir', type=str, default='/content/matteformer/images', help="input image dir")
     parser.add_argument('--mask-dir', type=str, default='/content/matteformer/trimaps', help="input trimap dir")
-    parser.add_argument('--trimap-dir', type=str, default='/content/matteformer/trimaps', help="input trimap dir")
+    parser.add_argument('--trimap-dir', type=str, default='/content/matteformer/timaps', help="input trimap dir")
 
     parser.add_argument('--output', type=str, default='predDIM/', help="output dir")
 
