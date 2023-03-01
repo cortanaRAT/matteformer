@@ -17,10 +17,10 @@
 #Set your paths here
 
 #path to provided foreground images
-fg_path = 'fg/'
+fg_path = 'images/'
 
 #path to provided alpha mattes
-a_path = 'alpha/'
+a_path = 'predDIM/pred_alpha'
 
 #Path to background images (MSCOCO)
 bg_path = 'bg/'
@@ -64,13 +64,13 @@ def composite4(fg, bg, a, w, h):
 
 num_bgs = 20
 
-# fg_files = os.listdir(fg_path)
-# a_files = os.listdir(a_path)
-# bg_files = os.listdir(bg_path)
-fg_files = open('test_fg_names.txt').readlines()
-fg_files = [name.strip() for name in fg_files]
-bg_files = open('test_bg_names.txt').readlines()
-bg_files = [name.strip() for name in bg_files]
+fg_files = os.listdir(fg_path)
+a_files = os.listdir(a_path)
+bg_files = os.listdir(bg_path)
+# fg_files = open('test_fg_names.txt').readlines()
+# fg_files = [name.strip() for name in fg_files]
+# bg_files = open('test_bg_names.txt').readlines()
+# bg_files = [name.strip() for name in bg_files]
 
 bg_iter = iter(bg_files)
 for im_name in fg_files:
